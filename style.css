@@ -3,3 +3,36 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.headerTop{
+    background-color: #4e207c;
+    height: 30px;
+}
+
+.section1{
+    min-height: 100vh;
+    background-image: url("/img/bg-second.jpg");
+}
+
+
+.section2{
+    min-height: 100vh;
+    background-image: url("/img/bg-inicio.webp");
+}
+
+footer{
+    min-height: 60vh;
+    text-align: center;
+    background-color: #4e207c;
+}
+
+
+footer button{
+    position: fixed;
+    bottom: 0; 
+    right: 0; 
+    margin: 20px; 
+    padding: 10px;
+    color: white;
+    border-radius: 90px;
+}
