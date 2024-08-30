@@ -1,65 +1,130 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.headerTop{
-    background-color: #4e207c;
+.header{
     height: 40px;
-}
-.conteiner1{
-    margin: 50px;
-}
-.conteiner1, form{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    background-color: #4e207c;
 }
 
-.form h1{
+#img-logo{
+    height: 150px;
+    margin-top: 60px;
+}
+
+#img-main{
+    height: 480px;
+    margin-top: 60px;
+}
+#title1{
     width: 650px;
-    font-size: 2rem;
-    margin: 20px;
 }
 
-.form p{
-    margin: 20px;
+#form{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
-.imgMain img{
-    height: 600px;
-    margin: 50px;
+#form input{
+    width: 500px;
+    height: 45px;
 }
 
-.conteinerImg img{
-    height: 130px;
-}
-
-.section1{
-    min-height: 100vh;
-    background-image: url("/img/bg-second.jpg");
+#form button{
+    width: 200px;
 }
 
 
-.section2{
-    min-height: 100vh;
-    background-image: url("/img/bg-inicio.webp");
+
+.hidden{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 2s;
 }
 
-footer{
-    min-height: 60vh;
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 2s;
+}
+
+section{
+   min-height: 100vh;
+}
+
+#section-main{
+    background-image: url('/img/bg-second.jpg');
+}
+
+#section-cards{
+    background-image: url('/img/bg-inicio.jpg');
+}
+
+#conteiner-title{
+    margin: 80px;
+    padding: 80px;
+}
+
+#titlecard{
+    text-align: center;
+    font-size: 3rem;
+}
+
+#cont-cards{
+    display: flex;
+    gap: 20px;
+}
+
+#card{
+    height: 400px;
+    width: 250px;
+}
+
+.hidden-y{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateY(-100%);
+    transition: all 2s;
+}
+
+.show-y{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+    transition: all 2s;
+}
+
+#ass{
+    min-height: 10vh;
     text-align: center;
     background-color: #4e207c;
+    font-size: 1.2rem;
+    padding: 20px;
+    border-top: 1px solid rgb(136, 110, 110);
 }
 
-footer button{
+#notice{
+    padding: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
+    min-height: 60vh;
+    background-color: #4e207c;
+    display: grid;
+    place-items: center;
+}
+
+#notice h4{
+    padding-top: 30px;
+    margin-bottom: 0;
+}
+
+
+.bottom-corner {
     position: fixed;
     bottom: 0; 
     right: 0; 
     margin: 20px; 
     padding: 10px;
-    color: white;
-    border-radius: 90px;
+    background-color: white;;
+    border-radius: 80px;
 }
