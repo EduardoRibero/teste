@@ -31,7 +31,7 @@ elementsy.forEach((element) =>{
 
 
 window.onscroll = function() {
-    const btn = document.getElementById("scrollToTopBtn");
+    const btn = document.getElementById(".bottom-corner");
     if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
         btn.style.opacity = 1;
     } else {
@@ -39,7 +39,7 @@ window.onscroll = function() {
     }
 };
 
-document.getElementById("scrollToTopBtn").onclick = function() {
+document.getElementById(".bottom-corner").onclick = function() {
     window.scrollTo({
         top: 0,
         behavior: 'smooth' 

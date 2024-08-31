@@ -1,3 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .header{
     height: 40px;
     background-color: #4e207c;
@@ -8,31 +15,31 @@
     margin-top: 60px;
 }
 
-#img-main{
-    height: 480px;
-    margin-top: 60px;
-}
-#title1{
-    width: 650px;
+#container-main{
+    display: grid;
+    place-items: center;
 }
 
-#form{
+#conteiner-img-main{
+    display: grid;
+    place-items: center;
+}
+
+#img-main{
+    height: 480px;
+    width: 400px;
+}
+
+.container-main form{
     display:flex;
     flex-direction: column;
     gap: 10px;
     margin-bottom: 20px;
 }
 
-#form input{
-    width: 500px;
-    height: 45px;
-}
-
-#form button{
+.container-main button{
     width: 200px;
 }
-
-
 
 .hidden{
     opacity: 0;
@@ -60,17 +67,7 @@ section{
     background-image: url('/img/bg-inicio.jpg');
 }
 
-#conteiner-title{
-    margin: 80px;
-    padding: 80px;
-}
-
-#titlecard{
-    text-align: center;
-    font-size: 3rem;
-}
-
-#cont-cards{
+#conteiner-cards{
     display: flex;
     gap: 20px;
 }
@@ -94,13 +91,9 @@ section{
     transition: all 2s;
 }
 
-#ass{
-    min-height: 10vh;
-    text-align: center;
-    background-color: #4e207c;
-    font-size: 1.2rem;
-    padding: 20px;
-    border-top: 1px solid rgb(136, 110, 110);
+#notice h4{
+    padding-top: 30px;
+    margin-bottom: 0;
 }
 
 #notice{
@@ -113,11 +106,14 @@ section{
     place-items: center;
 }
 
-#notice h4{
-    padding-top: 30px;
-    margin-bottom: 0;
+#ass{
+    min-height: 10vh;
+    text-align: center;
+    background-color: #4e207c;
+    font-size: 1.2rem;
+    padding: 20px;
+    border-top: 1px solid rgb(136, 110, 110);
 }
-
 
 .bottom-corner {
     position: fixed;
