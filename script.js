@@ -13,23 +13,6 @@ elements.forEach((element) =>{
     myObserver.observe(element)
 })
 
-
-const myObservery = new IntersectionObserver((entries) =>{
-    entries.forEach((entry)=>{
-        if(entry.isIntersecting){
-            entry.target.classList.add('show-y')
-        }else{
-            entry.target.classList.add('hidden-y')
-        }
-    })
-})
-const elementsy = document.querySelectorAll('.hidden-y')
-
-elementsy.forEach((element) =>{
-    myObservery.observe(element)
-})
-
-
 window.onscroll = function() {
     const btn = document.getElementById(".bottom-corner");
     if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
