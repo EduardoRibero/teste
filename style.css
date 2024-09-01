@@ -3,12 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    color: #4e207c;
 }
 
 body{
-    width: 100%;
-    min-height: 100vh;
-    background-image: url('/img/bg-second.jpg');
+    /* background-color: #f6cef8; */
+    background-image: url('/img/bg-inicio.jpg');
 }
 
 header{
@@ -19,14 +19,46 @@ header{
 
 section{
     min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container-main{
-    margin: 50px 20px;
+    margin: 20px 20px;
+
+    h1{
+        font-size: 2rem;
+    }
+
+    h1, p{
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
 
     form{
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
+
+        input{
+            margin-bottom: 20px;
+            padding: 20px;
+            height: 3rem;
+            width: auto;
+            background: linear-gradient(90deg, #cdbbf5 15%, #c9f7fc);
+            border: none;
+        }
+
+        button{
+            height: 2rem;
+            width: 40%;
+            background-color: #4e207c;
+            color: #f6cef8;
+            border-bottom-left-radius: 20px;
+            border-top-right-radius: 20px;
+            font-weight: bold;
+        }
     }
  
 }
@@ -37,7 +69,9 @@ section{
     justify-content: center;
 }
 
-
+#bkg{
+    width: 90%;
+}
 
 
 /* Movimentos */
