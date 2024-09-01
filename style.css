@@ -7,7 +7,6 @@
 }
 
 body{
-    /* background-color: #f6cef8; */
     background-image: url('/img/bg-inicio.jpg');
 }
 
@@ -50,6 +49,10 @@ section{
             border: none;
         }
 
+        #imput{
+          background: linear-gradient(-90deg, #cdbbf5 15%, #c9f7fc)
+        }
+
         button{
             height: 2rem;
             width: 40%;
@@ -77,29 +80,48 @@ section{
 /* Movimentos */
 .hidden{
     opacity: 0;
-    filter: blur(15px);
     transform: translateX(-100%);
-    transition: all 2s;
+    transition: all 1s;
 }
 
 .show{
     opacity: 1;
-    filter: blur(0);
     transform: translateX(0);
-    transition: all 2s;
+    transition: all 1s;
+}
+
+.hidden-reverse{
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 1s;
+}
+
+.show-reverse{
+    opacity: 1;
+    transform: translateX(-0);
+    transition: all 1s;
 }
 
 .hidden-y{
     opacity: 0;
-    filter: blur(15px);
     transform: translateY(-100%);
-    transition: all 2s;
-
+    transition: all 1s;
 }
 
 .show-y{
     opacity: 1;
-    filter: blur(0);
     transform: translateY(0);
-    transition: all 2s;
+    transition: all 1s;
+}
+
+.hidden-y-reverse{
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 1s;
+}
+
+.show-y-reverse{
+    opacity: 1;
+    transform: translateY(-0);
+    transition: all 1s;
 }
