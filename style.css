@@ -10,6 +10,10 @@
     background-color: #4e207c;
 }
 
+main{
+    background-image: url('/img/bg-second.jpg');
+}
+
 #img-logo{
     height: 150px;
     margin-top: 60px;
@@ -18,6 +22,9 @@
 #container-main{
     display: grid;
     place-items: center;
+    width: 30%;
+    margin-left: 5%;
+
 }
 
 #conteiner-img-main{
@@ -26,8 +33,8 @@
 }
 
 #img-main{
-    height: 480px;
-    width: 400px;
+    height: 40%;
+    width: 40%;
 }
 
 .container-main form{
@@ -37,6 +44,10 @@
     margin-bottom: 20px;
 }
 
+#degrade{
+    background-color: linear-gradient(-90deg, #cdbbf5 15%, #c9f7fc);
+ }
+
 .container-main button{
     width: 200px;
 }
@@ -44,14 +55,14 @@
 .hidden{
     opacity: 0;
     filter: blur(15px);
-    transform: translateX(-100%);
+    transform: translateX(100%);
     transition: all 2s;
 }
 
 .show{
     opacity: 1;
     filter: blur(0);
-    transform: translateX(0);
+    transform: translateX(-0);
     transition: all 2s;
 }
 
@@ -59,13 +70,12 @@ section{
    min-height: 100vh;
 }
 
-#section-main{
-    background-image: url('/img/bg-second.jpg');
+
+#bkg{
+    position: relative;
+    max-width: 1500px;
 }
 
-#section-cards{
-    background-image: url('/img/bg-inicio.jpg');
-}
 
 #conteiner-cards{
     display: flex;
@@ -80,14 +90,15 @@ section{
 .hidden-y{
     opacity: 0;
     filter: blur(15px);
-    transform: translateY(-100%);
+    transform: translateY(100%);
     transition: all 2s;
+
 }
 
 .show-y{
     opacity: 1;
     filter: blur(0);
-    transform: translateY(0);
+    transform: translateY(-0);
     transition: all 2s;
 }
 
