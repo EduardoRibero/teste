@@ -121,6 +121,30 @@ section{
     }
 
 }
+
+#card-end{
+    display: flex;
+    justify-content: center;
+    div{
+        padding: 20px;
+        text-align: center;
+        background: linear-gradient(-90deg, #cdbbf5 15%, #c9f7fc) ;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        max-width: 30rem;
+    }
+}
+
+#btn-vlt-inicio {
+    position: fixed;
+    bottom: 0; 
+    right: 0; 
+    margin: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 50px;
+    display: none;
+}
 /* Movimentos */
 .hidden{
     opacity: 0;

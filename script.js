@@ -1,3 +1,19 @@
+window.onscroll = function() {
+    const btn = document.getElementById("btn-vlt-inicio");
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        btn.style.display = "block";
+    } else {
+        btn.style.display = "none";
+    }
+};
+
+document.getElementById("btn-vlt-inicio").onclick = function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' 
+    });
+};
+
 const myObserver = new IntersectionObserver((entries) =>{
     entries.forEach((entry)=>{
         if(entry.isIntersecting){
@@ -58,19 +74,4 @@ elementsYReverse.forEach((element) =>{
     myObserverYReverse.observe(element)
 })
 
-window.onscroll = function() {
-    const btn = document.getElementById(".bottom-corner");
-    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-        btn.style.opacity = 1;
-    } else {
-        btn.style.opacity = 0;
-    }
-};
-
-document.getElementById(".bottom-corner").onclick = function() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth' 
-    });
-};
 
