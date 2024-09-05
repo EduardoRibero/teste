@@ -90,12 +90,15 @@ section{
 
 #card{
     margin: 20px;
+    margin-bottom: 40px;
     width: 200px;
-    height: 500px;
+    height: 600px;
     display: flex;
     flex-direction: column;
+    background-color: #e9cef5;
 
     h3{
+        min-width: 100%;
         text-align: center;
         padding: 30px;
         font-weight: bold;
@@ -104,14 +107,13 @@ section{
         border-top-right-radius: 20px;
     }
 
-    #card-txt{
-        margin: 20px;
+    #card-txt{ 
         height: 40%;
+        padding: 30px;
     }
 
     #rodape{
         div{
-            margin-left: 20px;
             strong{
                 font-size: 3rem;
                 color: #7c4ea9;
@@ -133,6 +135,36 @@ section{
         border-bottom-left-radius: 20px;
         max-width: 30rem;
     }
+}
+
+footer{
+    margin-top: 13rem;
+    height: 80vh;
+    background-color: #4e207c;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    #notice{
+        height: 60vh;
+
+        p{
+            margin:20px 80px;
+            padding: 50px;
+        }
+    }
+
+    #ass{
+        height: 10%;
+        padding: 40px;
+        margin: 40px;
+        border-top: 1px solid  rgb(136, 132, 132);
+    }
+}
+
+.cor-txt-f{
+    color: rgb(136, 132, 132);
 }
 
 #btn-vlt-inicio {
