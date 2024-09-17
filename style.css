@@ -6,6 +6,22 @@
     color: #4e207c;
 }
 
+
+/* Geral config */
+.bkg-linear{
+    background: linear-gradient(90deg, #cdbbf5 15%, #c9f7fc); 
+}
+
+.bkg-linear-revers{
+    background: linear-gradient(90deg, #c9f7fc 15%, #cdbbf5); 
+}
+
+.cor-txt-f{
+    color: rgb(136, 132, 132);
+}
+
+
+/*Estrutural config*/
 body{
     background-image: url('/img/bg-inicio.jpg');
 }
@@ -30,22 +46,35 @@ form{
     }
 }
 
-.bkg-linear{
-    background: linear-gradient(90deg, #cdbbf5 15%, #c9f7fc); 
-}
-
-.bkg-linear-revers{
-    background: linear-gradient(90deg, #c9f7fc 15%, #cdbbf5); 
-}
-
-
 footer{
     margin-top: 13rem;
     background-color: #4e207c;
 }
 
-.cor-txt-f{
-    color: rgb(136, 132, 132);
+
+/*Componentes config*/
+.card{
+    background-color: #ecc5f1;
+    overflow: hidden;
+
+    .card-header{
+        position: relative;
+        border: none;
+    }
+    
+    .card-header img{
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .card-body, .card-footer{
+        border: none;
+    }
+
 }
 
 #btn-vlt-inicio {
